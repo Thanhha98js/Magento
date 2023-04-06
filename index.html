@@ -27,9 +27,31 @@
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-
+    
+<!-- TRACKING SOURCE-->
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+    <!-- CDP Web Insight script -->
+<script type = "text/javascript" >
+   var _portalId = "564244922"; // Portal Demo Magento 
+   var _propId = "564990992"; 
+   var _ATM_TRACKING_ASSOCIATE_UTM = 1 ; // https://thanhha98js.github.io/Magento/ 
+(function() {
+    var w = window;
+    if (w.web_event) return;
+    var a = window.web_event = function() {
+        a.queue.push(arguments);
+    }
+    a.propId = _propId;
+    a.track = a;
+    a.queue = [];
+    var e = document.createElement("script");
+    e.type = "text/javascript", e.async = !0, e.src = "//st-a.cdp.asia/insight.js";
+    var t = document.getElementsByTagName("script")[0];
+    t.parentNode.insertBefore(e, t)
+})(); </script>
+<!-- End of CDP Web Insight script -->
+    
 </head>
 
 <body>
